@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5; /* light gray background */
+  margin: 0;
+  padding: 0;
+  color: #333; /* dark gray text */
+  line-height: 1.6;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+  text-align: center;
+  color: #222;
+}
+
+/* Paragraphs */
+p {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 20px;
+}
+
+
+/* Classes */
+.artist-section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+/* IDs */
+#nine-vicious {
+  border-color: #ff4d4d; /* unique red border for Nine Vicious section */
+}
+
+/* Images */
+.artist-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Flexbox layout for artist content (songs + albums) */
+.artist-content {
+  display: flex;           /* turns container into Flexbox */
+  gap: 30px;               /* space between songs and albums */
+  justify-content: center; /* center the content horizontally */
+  flex-wrap: wrap;         /* stack vertically on small screens */
+}
+
+/* Each section inside the Flexbox container */
+.artist-content section {
+  flex: 1 1 250px;         /* each section takes at least 250px, flexible */
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
