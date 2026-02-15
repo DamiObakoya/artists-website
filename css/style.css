@@ -60,3 +60,21 @@ p {
   border-radius: 8px;
   border: 1px solid #ddd;
 }
+
+/* Respnsive design for smaller screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .artist-content {
+    flex-direction: column; /* stack albums and songs on phones */
+    align-items: center;
+  }
+
+  .artist-img {
+    max-width: 90%;
+  }
+  
+}
