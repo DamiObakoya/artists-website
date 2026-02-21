@@ -45,21 +45,21 @@ p {
 }
 
 /* Flexbox layout for artist content (songs + albums) */
-.artist-content {
+/*.artist-content {
   display: flex;           /* turns container into Flexbox */
-  gap: 30px;               /* space between songs and albums */
-  justify-content: center; /* center the content horizontally */
-  flex-wrap: wrap;         /* stack vertically on small screens */
-}
+  /*gap: 30px;               /* space between songs and albums */
+  /*justify-content: center; /* center the content horizontally */
+  /*flex-wrap: wrap;         /* stack vertically on small screens */
+/*}*/
 
 /* Each section inside the Flexbox container */
-.artist-content section {
+/*.artist-content section {
   flex: 1 1 250px;         /* each section takes at least 250px, flexible */
-  background-color: #fafafa;
+  /*background-color: #fafafa;
   padding: 15px;
   border-radius: 8px;
   border: 1px solid #ddd;
-}
+}/*
 
 /* Respnsive design for smaller screens */
 @media (max-width: 600px) {
@@ -77,4 +77,10 @@ p {
     max-width: 90%;
   }
   
+}
+
+
+.my-title {
+  font-family: Georgia, serif;
+  color: #ff4d4d;
 }
