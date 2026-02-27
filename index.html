@@ -4,60 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nine Vicious</title>
-  <link rel="stylesheet" href="css/style.css"> <!-- Link CSS here -->
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Nine Vicious</h1>
-    <p>Welcome to my music page about Nine Vicious, the ATL rapper known for his high-energy trap style and viral tracks.</p>
-  </header>
+<div class="container mt-4">
 
-  <!-- Main Content -->
+  <header class="text-center mb-4">
+    <h1 class="my-title">Nine Vicious</h1>
+    <p class="lead">
+      Welcome to my music page about Nine Vicious, the ATL rapper known for his high-energy trap style and melodic viral tracks.
+    </p>
+  </header>
   <main>
 
-    <!-- About the Artist -->
-    <section class="artist-section" id="nine-vicious">
-      <h3>About Nine Vicious</h3>
-      <p>Nine Vicious is an Atlanta-based rapper who recently gained attention with his new album "B4EM". His music mixes trap beats with catchy hooks.</p>
-      <img src="img/ninevicious.jpg.jpg" class="artist-img">
+    <div class="row">
+      <section class="col-md-6 mb-4">
+        <h2>Favorite Songs</h2>
+        <ul>
+          <li>Riri</li>
+          <li>Slide Aht</li>
+          <li>The End</li>
+        </ul>
+      </section>
 
-      <!-- Flexbox container for songs and albums -->
-      <div class="artist-content">
-        <!-- Favorite Songs -->
-        <section class="songs">
-          <h4>Favorite Songs</h4>
-          <ul>
-            <li>Riri</li>
-            <li>Slide Aht</li>
-            <li>The End</li>
-          </ul>
-        </section>
+      <section class="col-md-6 mb-4">
+        <h2>Best Albums</h2>
+        <ol>
+          <li>B4EM EP</li>
+          <li>FN</li>
+        </ol>
+      </section>
+    </div>
 
-        <!-- Best Albums -->
-        <section class="albums">
-          <h4>Best Albums</h4>
-          <ol>
-            <li>B4EM EP</li>
-            <li>FN</li>
-          </ol>
-        </section>
-      </div>
-
-      <p>Learn more about <a href="https://www.youtube.com/@NineVicious">Nine Vicious here</a>.</p>
-    </section>
+    <div class="text-center">
+      <a href="https://www.youtube.com/@NineVicious" class="btn btn-primary">Learn More</a>
+    </div>
 
   </main>
 
-  <!-- Footer / Navigation -->
-  <footer>
+  <footer class="text-center mt-5">
     <h3>Check Out My Other Favorite Artists</h3>
-    <ul>
-      <li><a href="./kencarson.html">Ken Carson</a></li>
-      <li><a href="./playboi.html">Playboi Carti</a></li>
-    </ul>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="./kencarson.html" class="btn btn-success">Ken Carson</a>
+      <a href="./playboi.html" class="btn btn-success">Playboi Carti</a>
+    </div>
   </footer>
+
+</div>
 
 </body>
 </html>
